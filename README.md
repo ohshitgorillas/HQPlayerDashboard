@@ -8,7 +8,7 @@ Developed and tested against HQPlayer Embedded 5.x. Compatibility with HQPlayer 
 
 `hqp_exporter.py` connects to HQPlayer's TCP control API (port 4321) and exposes playback state, DSP metrics, track metadata, and output format as Prometheus gauges. The companion dashboard generator (`gen_dashboard.py`) produces a Grafana dashboard JSON covering HQPlayer, CPU, GPU, memory, and system metrics.
 
-<img width="3476" height="1803" alt="image" src="https://github.com/user-attachments/assets/24328e57-d0af-41d4-b415-f62eec2d9ecd" />
+<img alt="HQPlayer Dashboard" src="https://github.com/user-attachments/assets/24328e57-d0af-41d4-b415-f62eec2d9ecd" />
 
 
 ## Requirements
