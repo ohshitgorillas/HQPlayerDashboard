@@ -1,0 +1,15 @@
+# personal notes
+notes.md
+handoff.md
+exporters.md
+sources.md
+.claude/*
+
+# generated dashboards (use hqp-dashboard.json.example instead)
+*.json
+!hqp-dashboard.json.example
+
+# runtime
+venv/
+__pycache__/
+*.pyc

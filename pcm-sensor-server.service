@@ -1,0 +1,15 @@
+[Unit]
+Description=Intel PCM sensor server
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+ExecStart=/bin/bash -c 'echo y | /usr/local/sbin/pcm-sensor-server -p 9738 -R'
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
