@@ -1,15 +1,14 @@
 # hqp-exporter
 
-Prometheus exporter for [HQPlayer Embedded](https://www.signalyst.com/embedded.html) (daemon), plus a Grafana dashboard generator for a complete audio server monitoring stack.
+Prometheus exporter for [HQPlayer Embedded](https://www.signalyst.com/embedded.html) (daemon), plus a Grafana dashboard generator for a complete audio server performance monitoring stack.
 
-Developed and tested against HQPlayer Embedded 5.x. Compatibility with HQPlayer Desktop is unknown — the TCP control API may differ.
+<img alt="HQPlayer Dashboard" src="https://github.com/user-attachments/assets/24328e57-d0af-41d4-b415-f62eec2d9ecd" />
+
+Developed and tested against HQPlayer Embedded 5 on Ubuntu Server.
 
 ## What it does
 
 `hqp_exporter.py` connects to HQPlayer's TCP control API (port 4321) and exposes playback state, DSP metrics, track metadata, and output format as Prometheus gauges. The companion dashboard generator (`gen_dashboard.py`) produces a Grafana dashboard JSON covering HQPlayer, CPU, GPU, memory, and system metrics.
-
-<img alt="HQPlayer Dashboard" src="https://github.com/user-attachments/assets/24328e57-d0af-41d4-b415-f62eec2d9ecd" />
-
 
 ## Requirements
 
